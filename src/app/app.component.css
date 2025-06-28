@@ -10,21 +10,22 @@
 .layout {
   display: flex;
   height: 100vh;
+  overflow-y: auto;
+  z-index: 1000;
 }
 
 .sidebar {
   width: 265px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   border-radius: 20px 0 0 20px;
-  box-shadow: 0 8px 24px rgba(255, 105, 180, 0.2);
+  box-shadow: 0 8px 24px rgba(186, 170, 255, 0.3); /* pastel purple shadow */
   padding: 20px;
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
 }
 
-/* ✅ Remove dots from list */
 .sidebar ul {
   list-style: none;
   padding-left: 0;
@@ -32,7 +33,7 @@
 }
 
 .custom-title {
-  color: #fd6eba;
+  color: #a084e8; /* deeper pastel purple */
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -46,8 +47,6 @@
   font-weight: 500;
   display: flex;
   align-items: center;
-
-  /* ✅ Remove underline */
   text-decoration: none;
 }
 
@@ -57,30 +56,30 @@
 
 .nav-link.active,
 .nav-link:hover {
-  background-color: rgba(253, 110, 186, 0.12);
-  color: #fd6eba !important;
+  background-color: rgba(224, 210, 255, 0.5); /* light pastel purple hover */
+  color: #a084e8 !important;
   font-weight: 600;
 }
 
 .btn-dark {
   padding: 12px 79px;
   font-size: 15px;
-  background: linear-gradient(90deg, #fd6eba, #ffa9d7);
+  background: linear-gradient(90deg, #a084e8, #d5c9ff); /* pastel purple gradient */
   border: none;
   color: white;
   border-radius: 40px;
   transition: 0.3s ease;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .btn-dark:hover {
-  background: linear-gradient(90deg, #ff5eb0, #ff8ccf);
-  box-shadow: 0 4px 10px rgba(253, 110, 186, 0.3);
+  background: linear-gradient(90deg, #8b6edb, #c6b9ff); /* darker hover */
+  box-shadow: 0 4px 10px rgba(186, 170, 255, 0.3);
 }
 
 .main-content {
   flex: 1;
   overflow-y: auto;
-  background-color: #fdfbfc;
+  background-color: #faf9ff; /* soft background */
   padding: 30px;
 }

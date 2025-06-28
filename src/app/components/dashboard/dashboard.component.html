@@ -1,12 +1,70 @@
-<div class="dashboard-container">
-  <main class="main-content">
-    <h1 class="dashboard-title">Welcome to Your Dashboard</h1>
-    <p class="dashboard-subtext">Manage accounts, items, and billing with ease.</p>
+<main class="main">
+  <!-- Topbar -->
+  <div class="topbar">
+    <input type="text" placeholder="Search books..." />
+    <div class="profile">👤</div>
+  </div>
 
-    <div class="dashboard-widgets">
-      <div class="widget">👤 Total Customers: {{ totalCustomers }}</div>
-      <div class="widget">📦 Total Items: {{ totalItems }}</div>
-      <div class="widget">🧾 Recent Bills: {{ recentBills }}</div>
+  <!-- Banner -->
+  <section class="banner">
+    <div>
+      <h1>Hello 👋</h1>
+      <p>Manage your customers, items, and bills all in one place. Let’s make your bookshop thrive! 📚</p>
+      <button>Get Started</button>
     </div>
-  </main>
-</div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3014/3014732.png" alt="Books" />
+  </section>
+
+
+  <!-- Cards Grid -->
+  <section class="grid-section">
+
+    <div class="grid">
+      <div class="card">
+        👥 Total Customers
+        <button class="detail-btn">View Details</button>
+      </div>
+      <div class="card">
+        📦 Total Items
+        <button class="detail-btn">View Details</button>
+      </div>
+      <div class="card">
+        🧾 Bills Generated Today
+        <button class="detail-btn">View Details</button>
+      </div>
+      <div class="card">
+        🆕 New Customers Today
+        <button class="detail-btn">View Details</button>
+      </div>
+      <div class="card">
+        🗂️ Account Details
+        <button class="detail-btn">View Details</button>
+      </div>
+    </div>
+
+
+    <div class="grid">
+      <div class="card">
+        ➕ Add Customer
+        <button class="detail-btn">View Details</button>
+      </div>
+      <div class="card">
+        ➕ Add Item
+        <button class="detail-btn">View Details</button>
+      </div>
+      <div class="card">
+        🧮 Calculate & Print Bill
+        <button class="detail-btn">View Details</button>
+      </div>
+      <div class="card">
+        📘 Open Help Guide
+        <button class="detail-btn">View Details</button>
+      </div>
+      <div class="card">
+        📘 Open Help Guide
+        <button class="detail-btn">View Details</button>
+      </div>
+    </div>
+  </section>
+
+</main>
